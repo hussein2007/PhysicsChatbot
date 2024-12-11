@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>محادثة مع مساعد الفيزياء</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>محادثة مع مساعد الفيزياء</h1>
+    <form method="post">
+        <input type="text" name="user_input" placeholder="سؤالك">
+        <button type="submit">إرسال</button>
+    </form>
+    {% if user_input %}
+        <p>سؤالك: {{ user_input }}</p>
+        <p>الجواب: {{ response }}</p>
+    {% endif %}
+</body>
+</html>

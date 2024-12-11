@@ -1,1 +1,3 @@
-# PhysicsChatbot
+# مساعد الفيزياء
+
+مساعد فيزياء بسيط يستخدم Python وFlask.
